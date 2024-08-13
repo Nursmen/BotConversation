@@ -23,5 +23,6 @@ Why "Language Duel: Future Tongues"?
 
 Will English maintain its reign, or will Chinese take the crown? The decision is yours!
 
-
-![image](https://github.com/user-attachments/assets/22befdcb-053d-43b4-aa42-0aa784a437ca)
+<br>
+<img src='first (1).png'>
+<img src='first (2).png'>
