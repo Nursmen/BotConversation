@@ -4,11 +4,7 @@ from langchain_community.callbacks import StreamlitCallbackHandler
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.runnables import RunnableConfig
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
-
-from langchain.agents.format_scratchpad.openai_tools import format_to_openai_tool_messages
-from langchain.agents.output_parsers.openai_tools import OpenAIToolsAgentOutputParser
 
 import os
 import streamlit as st
@@ -52,7 +48,7 @@ def all_the_work(llm, prompt) -> str:
         search_depth="advanced",
         include_answer=True,
     )]  
-
+   
     chat_agent = ConversationalChatAgent.from_llm_and_tools(
         llm=llm,
         tools=tools,
